@@ -76,10 +76,30 @@
     color: var(--gold);
     text-decoration: none;
     display: inline-block;
-    animation: floatLogo 3s ease-in-out infinite,
-               goldGlow 2s ease-in-out infinite;
+overflow: hidden;
+white-space: nowrap;
+border-right: 2px solid var(--gold);
+
+width: 0;
+animation:
+    typing 3s steps(10,end) forwards,
+    blink .8s infinite,
+    goldGlow 2s ease-in-out infinite;
     }
-    
+    @keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 10ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
 
     nav ul a {
       font-family: 'Raleway', sans-serif;
@@ -1309,6 +1329,7 @@
       ul.style.padding = '1.5rem 5%';
       ul.style.gap = '1.2rem';
       ul.style.borderBottom = '1px solid rgba(201,168,76,0.2)';
+    
 }
 </script>
       <a href="https://wa.me/2348122867024" 
