@@ -68,18 +68,17 @@
       padding: 1rem 5%;
       background: rgba(10,22,40,0.97);
     }
-
     .logo {
-      font-family: 'Cinzel', serif;
-      font-size: 1.35rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      color: var(--gold);
-      text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: var(--gold);
+    text-decoration: none;
+    display: inline-block;
+
+    animation:
+        floatLogo 3s ease-in-out infinite,
+        goldGlow 2s ease-in-out infinite;
     }
-
-    .logo span { color: var(--white); }
-
     nav ul {
       display: flex;
       gap: 2.5rem;
@@ -893,7 +892,17 @@
       opacity: 0;
       transform: translateY(40px);
       transition: opacity 0.7s ease, transform 0.7s ease;
+}@keyframes floatLogo {
+      0%, 100% {
+        transform: translateY(0);
     }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes goldGlow {
+}
 
     .reveal.visible {
       opacity: 1;
@@ -910,6 +919,16 @@
       .clients-grid { grid-template-columns: repeat(2, 1fr); }
       .about-grid { grid-template-columns: 1fr; gap: 3rem; }
       .contact-wrapper { grid-template-columns: 1fr; gap: 3rem; }
+    @keyframes floatLogo {
+    0%,100% {
+        transform: translateY(0);
+    }
+    from {
+        text-shadow: 0 0 5px rgba(201,168,76,.4);
+    to {
+        text-shadow:
+            0 0 10px rgba(201,168,76,.8),
+            0 0 20px rgba(201,168,76,.6);
     }
 
     @media (max-width: 768px) {
