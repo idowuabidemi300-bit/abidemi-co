@@ -102,12 +102,21 @@ animation:
         border-color: transparent;
     }
 }
-    .logo img{
-    height:50px;
-    width:auto;
-    display:block;
-    }
+.logo{
+    font-family:'Cinzel', serif;
+    font-size:1.8rem;
+    font-weight:700;
+    color:#fff;
 
+    text-shadow:
+        0 0 5px rgba(201,168,76,.5),
+        0 0 15px rgba(201,168,76,.3),
+        0 4px 10px rgba(0,0,0,.5);
+}
+
+.logo span{
+    color:#c9a84c;
+}
 @keyframes logoIntro {
     0% {
         transform:
@@ -1110,7 +1119,7 @@ animation: hero3D 1.8s ease-out forwards;
   <!-- ── NAV ── -->
   <nav id="navbar">
 <a class="logo" href="#hero">
-    <img src="logo.png" alt="Abidemi Logo">
+    ABIDEMI<span>.CO</span>
 </a>
     <ul>
       <li><a href="#about">About</a></li>
