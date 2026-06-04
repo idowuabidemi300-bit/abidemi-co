@@ -79,7 +79,7 @@
     animation: floatLogo 3s ease-in-out infinite,
                goldGlow 2s ease-in-out infinite;
     }
-    }
+    
 
     nav ul a {
       font-family: 'Raleway', sans-serif;
@@ -885,10 +885,6 @@
        SCROLL REVEAL
     ════════════════════════════ */
     .reveal {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-.reveal {
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.7s ease, transform 0.7s ease;
@@ -897,50 +893,23 @@
 .reveal.visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-@keyframes floatLogo {
-    0%, 100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-8px);
-    }
-}
-
-@keyframes goldGlow {
-    0%, 100% {
-        text-shadow: 0 0 5px rgba(201,168,76,.4);
-    }
-
-    50% {
-        text-shadow:
-            0 0 15px rgba(201,168,76,.8),
-            0 0 25px rgba(201,168,76,.6);
-    }
-}
-    0%, 100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-8px);
-    }
-}
-
-@keyframes goldGlow {
-    0%, 100% {
-        text-shadow: 0 0 5px rgba(201,168,76,.4);
-    }
-
-    50% {
-        text-shadow:
-            0 0 15px rgba(201,168,76,.8),
-            0 0 25px rgba(201,168,76,.6);
-    }
       }
+@keyframes floatLogo {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
 
+@keyframes goldGlow {
+  0%,100% {
+    text-shadow: 0 0 5px rgba(201,168,76,.4);
+  }
+
+  50% {
+    text-shadow:
+      0 0 15px rgba(201,168,76,.8),
+      0 0 25px rgba(201,168,76,.6);
+  }
+}
     /* ════════════════════════════
        RESPONSIVE
     ════════════════════════════ */
@@ -986,6 +955,9 @@
 .whatsapp-float:hover {
     transform: scale(1.1);
 }
+    </style>
+</head>
+<body>
   <!-- ── NAV ── -->
   <nav id="navbar">
     <a class="logo" href="#hero">Abidemi<span>.co</span></a>
@@ -1225,7 +1197,7 @@
     </div>
   </section>
 
-  <!-- ── CONTACT ── --> </form>
+  <!-- ── CONTACT ── --> 
   <section id="contact">
     <div class="contact-wrapper">
       <div class="reveal">
@@ -1249,7 +1221,6 @@
           </div>
         </div>
       </div>
-
       <form name="contact" method="POST" data-netlify="true">
 <input type="hidden" name="form-name" value="contact">
           <div class="form-group">
@@ -1278,66 +1249,35 @@
         </div>
         <div class="form-group">
   <label>Tell Us About Your Project</label>
-
   <textarea
     name="project_details"
     placeholder="Tell us about your project..."
     required>
   </textarea>
 </div>
-
 <button type="submit" class="btn-submit">
   Send Message
 </button>
 </form>
 </section>
-
-<footer>
-...
-</footer>
-
-<script>
-...
-</script>
-    <div class="footer-logo">...</div>
-    <div class="footer-tagline">...</div>
+  <footer>
+    <a href="https://wa.me/2348122867024?text=..."
+       class="whatsapp-float"
+       target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <div class="footer-links">
-      ...
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
     </div>
-    <div class="footer-copy">...</div>
-  </div>
-  </form>
-</section>
 
-<footer>
-  <div class="footer-logo">Abidemi.co</div>
-
-  <div class="footer-tagline">
-    Strategy • Systems • Growth
-  </div>
+    <div class="footer-copy">
+        © 2025 Abidemi.co. All rights reserved.
+    </div>
 </footer>
-
-<a
-  href="https://wa.me/2348122867024?text=Hello%20Abidemi%20Co,%20I%20am%20interested%20in%20your%20services."
-  class="whatsapp-float"
-  target="_blank"
->
-  <i class="fab fa-whatsapp"></i>
-</a>
-<script>
-  <div class="footer-links">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-  <div class="footer-copy">
-    © 2025 Abidemi.co. All rights reserved.
-  </div>
-</footer>
-
 <script>
     // Nav scroll effect
     const navbar = document.getElementById('navbar');
@@ -1369,10 +1309,8 @@
       ul.style.padding = '1.5rem 5%';
       ul.style.gap = '1.2rem';
       ul.style.borderBottom = '1px solid rgba(201,168,76,0.2)';
-    ul.style.borderBottom = '1px solid rgba(...)';
 }
 </script>
-  </script>
       <a href="https://wa.me/2348122867024" 
    class="whatsapp-float"
    target="_blank">
