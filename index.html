@@ -925,11 +925,27 @@
       .form-row { grid-template-columns: 1fr; }
 
       footer { flex-direction: column; align-items: flex-start; }
-    }
-  </style>
-</head>
-<body>
-
+    }.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,.3); 
+}   /* closes @media block */
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
   <!-- ── NAV ── -->
   <nav id="navbar">
     <a class="logo" href="#hero">Abidemi<span>.co</span></a>
@@ -952,7 +968,6 @@
       <div class="hero-tag">Consulting · Strategy · Digital Growth</div>
       <h1>Where <span class="gold">Strategy</span><br/>Meets Excellence</h1>
       <p class="hero-sub">We help businesses, startups, and brands scale with precision — through technology consulting, web development, and results-driven digital solutions.</p>
-
       <div class="hero-badges">
         <span class="badge">Technology Consulting</span>
         <span class="badge">Web Development</span>
@@ -1261,7 +1276,16 @@
   <div class="footer-tagline">
     Strategy • Systems • Growth
   </div>
+</footer>
 
+<a
+  href="https://wa.me/2348122867024?text=Hello%20Abidemi%20Co,%20I%20am%20interested%20in%20your%20services."
+  class="whatsapp-float"
+  target="_blank"
+>
+  <i class="fab fa-whatsapp"></i>
+</a>
+<script>
   <div class="footer-links">
     <a href="#about">About</a>
     <a href="#services">Services</a>
@@ -1305,8 +1329,15 @@
       ul.style.padding = '1.5rem 5%';
       ul.style.gap = '1.2rem';
       ul.style.borderBottom = '1px solid rgba(201,168,76,0.2)';
-    }
+    ul.style.borderBottom = '1px solid rgba(...)';
+}
+</script>
   </script>
+      <a href="https://wa.me/2348122867024" 
+   class="whatsapp-float"
+   target="_blank">
+   <i class="fab fa-whatsapp"></i>
+</a>
 </body>
 </html>
-Fix Netlify contact form
+<!-- Fix Netlify contact form -->
