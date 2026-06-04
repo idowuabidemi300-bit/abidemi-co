@@ -79,14 +79,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     color: var(--gold);
     text-decoration: none;
     display: inline-block;
-overflow: hidden;
 white-space: nowrap;
 border-right: 2px solid var(--gold);
-
-width: 0;
-animation:
-    logoIntro 1.6s ease-out forwards,
-    floatLogo 4s ease-in-out infinite 1.6s;
+       overflow: visible;
+width: auto;
+animation: none;
     }
     @keyframes typing {
     from {
@@ -102,22 +99,6 @@ animation:
         border-color: transparent;
     }
 }
-.logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    color: var(--gold);
-    text-decoration: none;
-    display: inline-block;
-    white-space: nowrap;
-
-    animation:
-        logoIntro 1.6s ease-out forwards,
-        floatLogo 4s ease-in-out infinite 1.6s;
-}
-   }
-
 .logo span{
     color:#c9a84c;
 }
