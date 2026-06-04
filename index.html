@@ -82,8 +82,8 @@ border-right: 2px solid var(--gold);
 
 width: 0;
 animation:
-    typing 3s steps(10,end) forwards,
-    blink .8s 4,
+    typing 3s steps(11,end) forwards,
+    blink .8s 5,
     goldGlow 2s ease-in-out infinite;
     }
     @keyframes typing {
@@ -796,6 +796,36 @@ animation:
       flex-direction: column;
       gap: 0.4rem;
     }
+    @media (max-width: 768px) {
+@media (max-width: 768px) {
+
+   /* mobile styles */
+
+}
+
+.whatsapp-float {
+   position: fixed;
+   bottom: 25px;
+   right: 20px;
+   width: 65px;
+   height: 65px;
+   background: #25D366;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   font-size: 32px;
+   text-decoration: none;
+   box-shadow: 0 4px 15px rgba(0,0,0,.3);
+   z-index: 9999;
+}
+
+.whatsapp-float span {
+   display: none;
+}
+
+  </style>
 
     .form-group label {
       font-size: 0.7rem;
@@ -1232,15 +1262,6 @@ animation:
             <span>Idowuabidemi300@gmail.com</span>
           </div>
           <div class="contact-item">
-    <div class="contact-icon">
-        <i class="fa-brands fa-whatsapp"></i>
-    </div>
-
-    <span>
-        <a href="https://wa.me/2348122867024" target="_blank">
-            Chat on WhatsApp
-        </a>
-    </span>
           </div>
           <div class="contact-item">
             <div class="contact-icon">📍</div>
