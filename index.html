@@ -83,7 +83,7 @@ border-right: 2px solid var(--gold);
 width: 0;
 animation:
     typing 3s steps(10,end) forwards,
-    blink .8s infinite,
+    blink .8s 4,
     goldGlow 2s ease-in-out infinite;
     }
     @keyframes typing {
@@ -1232,8 +1232,15 @@ animation:
             <span>Idowuabidemi300@gmail.com</span>
           </div>
           <div class="contact-item">
-            <div class="contact-icon">📱</div>
-            <span>WhatsApp: 08122867024</span>
+    <div class="contact-icon">
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
+
+    <span>
+        <a href="https://wa.me/2348122867024" target="_blank">
+            Chat on WhatsApp
+        </a>
+    </span>
           </div>
           <div class="contact-item">
             <div class="contact-icon">📍</div>
@@ -1332,11 +1339,12 @@ animation:
     
 }
 </script>
-      <a href="https://wa.me/2348122867024" 
+    <a href="https://wa.me/2348122867024?text=Hello%20Abidemi.co,%20I%20would%20like%20to%20learn%20more%20about%20your%20services."
    class="whatsapp-float"
    target="_blank">
-   <i class="fab fa-whatsapp"></i>
-</a>
+   <i class="fa-brands fa-whatsapp"></i>
+   <span>Chat</span>
+    </a>
 </body>
 </html>
 <!-- Fix Netlify contact form -->
