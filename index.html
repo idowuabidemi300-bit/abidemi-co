@@ -102,23 +102,21 @@ animation:
         border-color: transparent;
     }
 }
-.logo{
-    font-family:'Cinzel', serif;
-    font-size:1.8rem;
-    font-weight:700;
-    color:#fff;
-    text-decoration:none;
-    display:inline-block;
-    white-space:nowrap;
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
 
-    position:relative;
-    z-index:10001;
-
-    text-shadow:
-        0 0 5px rgba(201,168,76,.5),
-        0 0 15px rgba(201,168,76,.3),
-        0 4px 10px rgba(0,0,0,.5);
+    animation:
+        logoIntro 1.6s ease-out forwards,
+        floatLogo 4s ease-in-out infinite 1.6s;
 }
+   }
 
 .logo span{
     color:#c9a84c;
@@ -133,6 +131,7 @@ animation:
         opacity: 1;
         filter: blur(15px);
     }
+ }  
 
     60% {
         transform:
@@ -143,6 +142,7 @@ animation:
         opacity: 1;
         filter: blur(0);
     }
+  } 
     100% {
         transform:
             perspective(1200px)
