@@ -87,6 +87,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     animation: none;
     border-right: none;
     }
+       .logo,
+.logo:visited,
+.logo:hover,
+.logo:active {
+    color: var(--gold) !important;
+    text-decoration: none !important;
+}
+
+.logo span {
+    color: var(--gold) !important;
+}
     @keyframes typing {
     from {
         width: 0;
@@ -652,7 +663,7 @@ animation: hero3D 1.8s ease-out forwards;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
-      margin-top: 1rem;
+      margin-top: 30px;
     }
 
     .process-step {
@@ -778,7 +789,8 @@ animation: hero3D 1.8s ease-out forwards;
       font-size: 0.65rem;
       letter-spacing: 0.25em;
       text-transform: uppercase;
-      color: var(--gold);
+      color: var(--gold); !important;
+      text-decoration: none !important;
       margin-bottom: 0.5rem;
     }
 
