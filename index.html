@@ -78,7 +78,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: 0.08em;
-    color:inherit;
+    color: var(--gold);
     text-decoration: none;
     display: inline-block;
     white-space: nowrap;
@@ -102,7 +102,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     }
 }
 .logo span{
-    color:#c9a84c;
+    color: var(--gold);
+
 }
 @keyframes logoIntro {
     0% {
@@ -1121,10 +1122,37 @@ animation: hero3D 1.8s ease-out forwards;
     color:#fff;
     font-size:1.1rem;
 }
+       footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid rgba(255,255,255,.1);
+    color:#ccc;
+       }
+     #testimonials{
+    padding:100px 8%;
+    text-align:center;
+     }
+       #why-us{
+    padding:100px 8%;
+    text-align:center;
+       }
        #blog,
 #booking{
     padding:100px 8%;
     text-align:center;
+   .hero-buttons{
+    margin-top:30px;
+}
+
+.btn-outline{
+    display:inline-block;
+    padding:14px 28px;
+    border:1px solid var(--gold);
+    color:var(--gold);
+    text-decoration:none;
+    border-radius:8px;
+    margin-left:10px;
+}
 }
 
 #blog h2,
@@ -1190,6 +1218,10 @@ animation: hero3D 1.8s ease-out forwards;
   <section id="hero">
     <div class="hero-glow"></div>
     <div class="hero-content">
+       <div class="hero-buttons">
+    <a href="#booking" class="btn-gold">Book Consultation</a>
+    <a href="#pricing" class="btn-outline">View Pricing</a>
+       </div>
       <div class="hero-tag">Consulting · Strategy · Digital Growth</div>
       <h1>Where <span class="gold">Strategy</span><br/>Meets Excellence</h1>
       <p class="hero-sub">We help businesses, startups, and brands scale with precision — through technology consulting, web development, and results-driven digital solutions.</p>
@@ -1411,6 +1443,26 @@ animation: hero3D 1.8s ease-out forwards;
   </section>
    ...
 </section>
+   <section id="why-us">
+
+<h2>Why Choose Us</h2>
+
+<div class="pricing-card">
+    <h3>Affordable Solutions</h3>
+    <p>Flexible packages designed for startups and growing businesses.</p>
+</div>
+
+<div class="pricing-card">
+    <h3>Fast Delivery</h3>
+    <p>Projects delivered efficiently without compromising quality.</p>
+</div>
+
+<div class="pricing-card">
+    <h3>Ongoing Support</h3>
+    <p>Continuous guidance and support after project completion.</p>
+</div>
+
+   </section>
 
 <section id="pricing">
     <h2>Pricing</h2>
@@ -1460,32 +1512,52 @@ animation: hero3D 1.8s ease-out forwards;
   <h2>Blog & Insights</h2>
   <p>Latest business, technology and growth insights.</p>
    <div class="pricing-card">
-    <h3>Why Every Business Needs a Website in 2026</h3>
-    <p>A professional website builds trust, attracts customers, showcases your services, and helps your business grow online.</p>
+    <h3>Why Every Business Needs a Website in 2025</h3>
+    <p>A professional website builds trust, attracts customers and grows revenue.</p>
 </div>
 
 <div class="pricing-card">
     <h3>How Digital Marketing Increases Sales</h3>
-    <p>Learn how SEO, social media marketing, and online advertising can generate leads and increase revenue.</p>
+    <p>Learn how SEO, social media and paid advertising help businesses grow.</p>
 </div>
 
 <div class="pricing-card">
     <h3>Technology Consulting for Small Businesses</h3>
-    <p>Discover how technology solutions can improve efficiency, reduce costs, and help businesses scale successfully.</p>
+    <p>Discover tools and strategies that improve efficiency and profitability.</p>
 </div>
-</section>
 
 <!-- BOOKING -->
 <section id="booking">
   <h2>Book a Consultation</h2>
-  <p>Schedule a strategy session with Abidemi.co.</p>
-
+  <p>
+Book a one-on-one consultation to discuss business growth,
+technology solutions, website development and digital strategy.
+  </p>
 <a href="https://calendly.com/idowuabidemi300"
    class="btn-gold"
    target="_blank">
    Book Appointment
 </a>
 </section>
+   <section id="testimonials">
+
+<h2>Client Testimonials</h2>
+
+<div class="pricing-card">
+    <p>
+    "Professional, reliable and delivered exactly what we needed."
+    </p>
+    <strong>- Business Owner</strong>
+</div>
+
+<div class="pricing-card">
+    <p>
+    "Great communication and excellent technical support."
+    </p>
+    <strong>- Startup Founder</strong>
+</div>
+
+   </section>
   <!-- ── CONTACT ── --> 
   <section id="contact">
     <div class="contact-wrapper">
@@ -1560,7 +1632,7 @@ animation: hero3D 1.8s ease-out forwards;
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
     </div>
-
+  </body>
     <div class="footer-copy">
         © 2025 Abidemi.co. All rights reserved.
     </div>
