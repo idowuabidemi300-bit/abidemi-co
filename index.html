@@ -1075,7 +1075,92 @@ animation: hero3D 1.8s ease-out forwards;
 .whatsapp-float:hover {
     transform: scale(1.1);
 }
+       #pricing{
+    padding:100px 8%;
+    background:#081528;
+}
+
+#pricing h2{
+    text-align:center;
+    color:var(--gold);
+    margin-bottom:40px;
+}
+
+.pricing-card{
+    border:1px solid rgba(201,168,76,.3);
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:12px;
+    background:rgba(255,255,255,.03);
+}
+
+.pricing-card h3{
+    color:var(--gold);
+    margin-bottom:10px;
+}
+       .pricing-note{
+    text-align:center;
+    margin-top:40px;
+    padding:20px;
+    border:1px solid rgba(201,168,76,.3);
+    border-radius:12px;
+    background:rgba(255,255,255,.03);
+}
+
+.pricing-note p{
+    color:#ccc;
+    font-size:1rem;
+    line-height:1.7;
+}
+
+.pricing-note strong{
+    color:var(--gold);
+}
+
+.pricing-card p{
+    color:#fff;
+    font-size:1.1rem;
+}
+       #blog,
+#booking{
+    padding:100px 8%;
+    text-align:center;
+}
+
+#blog h2,
+#booking h2{
+    color:var(--gold);
+    margin-bottom:20px;
+}
+
+#blog p,
+#booking p{
+    color:#ccc;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn-gold{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 28px;
+    background:var(--gold);
+    color:#000;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:700;
+}
     </style>
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J3BQLE2TMH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J3BQLE2TMH');
+   <script>
+</script>
 </head>
 <body>
   <!-- ── NAV ── -->
@@ -1083,11 +1168,17 @@ animation: hero3D 1.8s ease-out forwards;
 <a class="logo" href="#hero">
     ABIDEMI<span>.CO</span>
 </a>
+   
+
+<!-- Google Analytics here -->
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#process">Process</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
+       <li><a href="#pricing">Pricing</a></li>
+       <li><a href="#blog">Blog</a></li>
+       <li><a href="#booking">Book Consultation</a></li>
       <li><a href="#contact" class="nav-cta">Get Started</a></li>
     </ul>
     <div class="hamburger" onclick="toggleMenu()">
@@ -1318,7 +1409,69 @@ animation: hero3D 1.8s ease-out forwards;
       </div>
     </div>
   </section>
+   ...
+</section>
 
+<section id="pricing">
+    <h2>Pricing</h2>
+
+    <div class="pricing-card">
+        <h3>Website Design - Basic</h3>
+        <p>₦100,000</p>
+    </div>
+
+    <div class="pricing-card">
+        <h3>Website Design - Standard</h3>
+        <p>₦150,000 - ₦200,000</p>
+    </div>
+
+    <div class="pricing-card">
+        <h3>Website Design - Premium</h3>
+        <p>₦250,000 - ₦300,000</p>
+    </div>
+
+    <div class="pricing-card">
+        <h3>Consulting - Basic</h3>
+        <p>₦50,000/month</p>
+    </div>
+
+    <div class="pricing-card">
+        <h3>Consulting - Standard</h3>
+        <p>₦80,000/month</p>
+    </div>
+
+    <div class="pricing-card">
+        <h3>Consulting - Premium</h3>
+        <p>₦150,000/month</p>
+    </div>
+   <div class="pricing-note">
+<div class="pricing-note">
+    <p>
+        <strong>Need a custom solution?</strong><br>
+        We offer flexible pricing, budget-friendly packages, and project-based discounts.
+        Every business is unique, so pricing can be adjusted based on your goals, requirements,
+        and budget. Contact us for a personalized quote.
+    </p>
+</div>
+   
+</section>
+<!-- BLOG -->
+<section id="blog">
+  <h2>Blog & Insights</h2>
+  <p>Latest business, technology and growth insights.</p>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+  <h2>Book a Consultation</h2>
+  <p>Schedule a strategy session with Abidemi.co.</p>
+
+<a href="https://calendly.com/idowuabidemi300"
+   class="btn-gold"
+   target="_blank">
+   Book Appointment
+</a>
+</section>
   <!-- ── CONTACT ── --> 
   <section id="contact">
     <div class="contact-wrapper">
